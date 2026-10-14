@@ -67,7 +67,7 @@ Agent
 
 前面是**静态前缀**：每一轮上下文里它都在，优先级最高、也最稳定，包括 system prompt（系统提示词）和 tool definitions（工具定义）。后面是用户提供的对话历史和那些轨迹，会随着我们不断的互动而不断增长。
 
-![图2-4 API 视角看上下文构成](../book/images/fig2-4.svg)
+![图2-4 API 视角看上下文构成](./images/fig2-4.svg)
 
 ### 6. KV Cache 是什么
 
