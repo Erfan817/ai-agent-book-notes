@@ -1,0 +1,85 @@
+{
+  "method": "bm25",
+  "query": "model distillation",
+  "top_k": 5,
+  "eval": {
+    "k": 5,
+    "per_query": {
+      "red-black tree": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0,
+        "hits": [
+          "ds_red_black"
+        ]
+      },
+      "Dijkstra priority queue": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0,
+        "hits": [
+          "ds_dijkstra"
+        ]
+      },
+      "negative cycles": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0,
+        "hits": [
+          "ds_bellman_ford"
+        ]
+      },
+      "amortized append": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "rr": 1.0,
+        "hits": [
+          "ds_amortized"
+        ]
+      },
+      "topological sort directed acyclic graph": {
+        "recall": 1.0,
+        "precision": 0.3333333333333333,
+        "rr": 1.0,
+        "hits": [
+          "ds_topological"
+        ]
+      },
+      "keeping a phone book so names are found almost instantly": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "rr": 0.0,
+        "hits": []
+      },
+      "the fastest way to travel between two cities on a road map": {
+        "recall": 1.0,
+        "precision": 0.2,
+        "rr": 0.5,
+        "hits": [
+          "ds_dijkstra"
+        ]
+      },
+      "a strategy that costs the same no matter how bad the input looks": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "rr": 0.0,
+        "hits": []
+      },
+      "O(n log n)": {
+        "recall": 1.0,
+        "precision": 0.4,
+        "rr": 0.5,
+        "hits": [
+          "ds_quick_sort",
+          "ds_merge_sort"
+        ]
+      }
+    },
+    "macro": {
+      "recall@k": 0.7777777777777778,
+      "precision@k": 0.5481481481481482,
+      "mrr": 0.6666666666666666,
+      "miss_rate@k": 0.2222222222222222
+    }
+  }
+}

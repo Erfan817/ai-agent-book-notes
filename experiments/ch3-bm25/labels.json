@@ -1,0 +1,11 @@
+{
+  "red-black tree": ["ds_red_black"],
+  "Dijkstra priority queue": ["ds_dijkstra"],
+  "negative cycles": ["ds_bellman_ford"],
+  "amortized append": ["ds_amortized"],
+  "topological sort directed acyclic graph": ["ds_topological"],
+  "keeping a phone book so names are found almost instantly": ["ds_hash_table"],
+  "the fastest way to travel between two cities on a road map": ["ds_dijkstra"],
+  "a strategy that costs the same no matter how bad the input looks": ["ds_merge_sort"],
+  "O(n log n)": ["ds_quick_sort", "ds_merge_sort"]
+}

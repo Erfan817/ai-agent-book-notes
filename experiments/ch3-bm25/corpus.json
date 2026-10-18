@@ -1,0 +1,52 @@
+[
+  {
+    "doc_id": "ds_array",
+    "title": "Array",
+    "text": "An array stores elements in contiguous memory, so reading by index takes constant time O(1), while inserting in the middle costs O(n) because later elements must shift."
+  },
+  {
+    "doc_id": "ds_linked_list",
+    "title": "Linked List",
+    "text": "A linked list stores each element in a node that points to the next node. Insertion at a known position is O(1), but searching for a value takes O(n) since nodes are scattered."
+  },
+  {
+    "doc_id": "ds_hash_table",
+    "title": "Hash Table",
+    "text": "A hash table turns a key into a bucket index with a hash function. With a reasonable load factor, lookup is O(1) on average; collisions are handled by chaining or open addressing."
+  },
+  {
+    "doc_id": "ds_red_black",
+    "title": "Red-Black Tree",
+    "text": "A red-black tree is a self-balancing binary search tree. Rotations and recoloring keep its height logarithmic, which guarantees O(log n) search, insertion and deletion."
+  },
+  {
+    "doc_id": "ds_quick_sort",
+    "title": "Quicksort",
+    "text": "Quicksort partitions an array around a pivot and recurses on both sides. Average time is O(n log n), but an unlucky pivot degrades it to O(n^2)."
+  },
+  {
+    "doc_id": "ds_merge_sort",
+    "title": "Merge Sort",
+    "text": "Merge sort splits the array in half, sorts each half recursively, then merges the two sorted halves. It always runs in O(n log n) and needs O(n) extra space."
+  },
+  {
+    "doc_id": "ds_dijkstra",
+    "title": "Dijkstra",
+    "text": "Dijkstra's algorithm finds the shortest path from a source vertex to every other vertex in a weighted graph with non-negative edges, using a priority queue to pick the nearest unvisited vertex."
+  },
+  {
+    "doc_id": "ds_bellman_ford",
+    "title": "Bellman-Ford",
+    "text": "Bellman-Ford relaxes every edge V-1 times, so it tolerates negative weights and detects negative cycles, at a cost of O(V E) time."
+  },
+  {
+    "doc_id": "ds_topological",
+    "title": "Topological Sort",
+    "text": "Topological sort orders the vertices of a directed acyclic graph so that every edge points from an earlier vertex to a later one. Kahn's algorithm finishes it in O(V+E)."
+  },
+  {
+    "doc_id": "ds_amortized",
+    "title": "Amortized Analysis",
+    "text": "A dynamic array doubles its capacity when full, so appending n elements costs O(n) in total, which is an amortized O(1) per append."
+  }
+]
